@@ -1,0 +1,31 @@
+Timestamp,Direction,ID,Byte0,Byte1,Byte2,Byte3,Byte4,Byte5,Byte6,Byte7,Description
+17:14:41.677,TX,7E0,02,10,81,00,00,00,00,00,Start Diagnostic Session - Standard Diagnostic
+17:14:41.728,RX,7E8,02,50,81,00,00,00,00,00,OK
+17:14:41.729,TX,7E0,02,3E,01,00,00,00,00,00,Tester Present - Response Required
+17:14:41.744,RX,7E8,01,7E,00,00,00,00,00,00,OK
+17:14:41.846,TX,7E0,03,22,02,00,00,00,00,00,Read Common ID 0x0200
+17:14:41.868,RX,7E8,04,62,02,00,19,00,00,00,OK - DID 0200 = 19
+17:14:41.968,TX,7E0,07,23,00,01,00,46,00,06,Read Memory 0x00010046 (6 bytes)
+17:14:41.991,RX,7E8,07,63,48,41,41,4E,47,41,"OK - Memory Read = 48 41 41 4E 47 41 (""HAANGA"")"
+17:14:41.991,TX,7E0,07,23,00,01,00,4C,00,05,Read Memory 0x0001004C (5 bytes)
+17:14:42.022,RX,7E8,06,63,33,2E,48,45,58,00,"OK - Memory Read = 33 2E 48 45 58 (""3.HEX"")"
+17:14:42.123,TX,7E0,02,27,01,00,00,00,00,00,Security Access
+17:14:42.179,RX,7E8,04,67,01,00,BB,00,00,00,OK - Seed: 00 BB
+17:14:42.279,TX,7E0,02,11,01,00,00,00,00,00,ECU Reset
+17:14:42.320,RX,7E8,03,7F,11,11,00,00,00,00,NR - Service Not Supported
+17:14:42.421,TX,7E0,03,22,02,00,00,00,00,00,Read Common ID 0x0200
+17:14:42.446,RX,7E8,04,62,02,00,19,00,00,00,OK - DID 0200 = 19
+17:14:42.447,TX,7E0,04,18,00,FF,00,00,00,00,Read DTC By Status
+17:14:42.479,RX,7E8,10,4D,58,19,01,22,63,01,Multiframe - 77 bytes
+17:14:42.479,TX,7E0,30,00,00,00,00,00,00,00,Multiframe - Flow Control
+17:14:42.495,RX,7E8,21,24,63,02,23,63,02,24,Multiframe - Consecutive
+17:14:42.510,RX,7E8,22,63,07,08,63,07,13,63,Multiframe - Consecutive
+17:14:42.510,RX,7E8,23,07,43,63,07,53,63,07,Multiframe - Consecutive
+17:14:42.526,RX,7E8,24,58,63,07,63,63,07,68,Multiframe - Consecutive
+17:14:42.526,RX,7E8,25,63,07,73,63,08,26,63,Multiframe - Consecutive
+17:14:42.542,RX,7E8,26,08,28,63,12,60,63,15,Multiframe - Consecutive
+17:14:42.542,RX,7E8,27,34,63,17,46,63,21,22,Multiframe - Consecutive
+17:14:42.558,RX,7E8,28,63,21,24,63,21,27,63,Multiframe - Consecutive
+17:14:42.558,RX,7E8,29,21,29,63,21,32,63,21,Multiframe - Consecutive
+17:14:42.573,RX,7E8,2A,34,63,D1,47,63,D9,00,Multiframe - Consecutive
+17:14:42.573,RX,7E8,2B,63,00,00,00,00,00,00,Multiframe - Consecutive
